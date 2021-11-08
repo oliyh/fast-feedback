@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Fast feedback</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="img/background.jpg">
+	  <h2 class="r-fit-text">Welcome</h2>
+          <p>A short overview of optimising your development feedback loop</p>
+	  <p style="font-size: large; text-align: left; margin-top: 5em;">
+	    <img src="img/me.jpg" style="width: 250px; float: left; margin: 0 16px 0 0;"/>
+            <span>
+              <img src="img/github.png" style="height: 1em; margin: 0 4px 0 0; vertical-align: middle;"/>
+              <a href="https://github.com/oliyh">oliyh</a>
+              <br/><br/>
+              I've been a professional software developer for 15 years, and I don't know how to type the character é.
+              <br/><br/>
+              If I need it I copy it from Beyoncé's wikipedia page.
+            </span>
+	  </p>
+	</section>
+
+	<section>
+          <h3>How do we improve things?</h3>
+          <ol>
+	    <li class="fragment fade-in-then-semi-out">Understand</li>
+	    <li class="fragment fade-in-then-semi-out">Observe</li>
+            <li class="fragment fade-in-then-semi-out">Think</li>
+	    <li class="fragment fade-in-then-semi-out">Change</li>
+	    <li class="fragment fade-in-then-semi-out">GOTO 1</li>
+	  </ol>
+
+          <p class="fragment fade-in" style="text-align: left; margin-top: 2em;">
+            <img src="img/neverending-sunglasses.gif" style="float: left; margin: 0 16px 0 0;"/>
+            We may loop hundreds of times to fix a bug or implement a feature, so it's important to optimise it
+          </p>
+
+          <aside class="notes">
+            <p>
+            Our job is to improve things.
+            We may be adding features, fixing bugs or making things more efficient, but in all cases the overall flow is the same
+            </p>
+
+            <ol>
+              <li>Understand: gather information - description, wireframes, plan</li>
+              <li>Observe: reproduce, or attempt to perform</li>
+              <li>Think: documentation, pair</li>
+              <li>Change: Typing time - concise code, well-factored code</li>
+            </ol>
+	  </aside>
+        </section>
+
+	<section>
+          <h3>Understand, observe, think</h3>
+          <ul>
+	    <li class="fragment fade-in-then-semi-out">Build a mental model</li>
+	    <li class="fragment fade-in-then-semi-out">
+              Take notes
+              <ul>
+                <li>Mind maps</li>
+                <li>Lists</li>
+                <li>Kettelkasten method</li>
+              </ul>
+            <li class="fragment fade-in-then-semi-out">Challenge, update and reinforce your model</li>
+	  </ul>
+
+          <p class="fragment fade-in">
+            A honed mental model will help you to understand and think more efficiently about problems and solutions.
+          </p>
+
+          <aside class="notes">
+            <ul>
+              <li>Absorb any information you already have to start building your model. It should make intuitive sense</li>
+              <li>Take notes but just as important is to know how to organise them</li>
+              <li>Never be afraid to challenge and update your model - it can only make it better. Ask questions and experiment</li>
+            </ul>
+          </aside>
+        </section>
+
+	<section>
+          <h3>Organise!</h3>
+          <p>
+            Accept you will be initially deluged with information
+          </p>
+          <img src="img/complicated.jpg" class="r-stretch"/>
+
+          <aside class="notes">
+            <ul>
+              <li>It might all be relevant: some for now, the rest in the future</li>
+              <li>It won't all fit in your head, so take notes</li>
+              <li>Arrange your knowledge methodically to allow you to focus on the things that matter without being overwhelmed</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Changing</h3>
+          <p>
+            Our IDE is an anvil
+          </p>
+          <img src="img/elven-forge.gif"/>
+          <p>
+            keyboards our hammers
+          </p>
+
+          <aside class="notes">
+            Once we've done all our thinking we are ready to write our new code.
+          </aside>
+
+        </section>
+
+        <section>
+          <h3>IDE</h3>
+          <p>
+            Your IDE will contain many shortcuts for common tasks:
+          </p>
+          <p style="text-align: left;">
+          <ul>
+            <li class="fragment fade-in-then-semi-out">
+              <img src="img/autoformat.gif" class="fragment-list-image"/>
+              Auto-formatting
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              <img src="img/rename-symbol-local.gif" class="fragment-list-image"/>
+              Renaming something
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              <img src="img/add-missing-libspec.gif" class="fragment-list-image"/>
+              Auto imports of dependencies
+            </li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>There will be many, many more</li>
+              <li>Spend some time discovering and playing with these. Having them at your fingertips will multiply your output</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Typing</h3>
+          <p>
+            Typing speed ∝ Hacking ability
+          </p>
+
+          <p>
+            <video width="320" height="240" autoplay="true" muted="true" loop="true" controls="true">
+              <source src="img/hackers-be-like.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </p>
+
+          <aside class="notes">
+            <ul>
+              <li>If you can type 150 words per minute you can hack any system, no matter how secure</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Keyboards</h3>
+          <p>
+            <ul>
+              <li>Do you use all your fingers?</li>
+              <li>Touch type without ever looking at the keyboard?</li>
+              <li>Have frequently used keys in convenient places?</li>
+              <li>Minimise finger travel to improve accuracy?</li>
+            </ul>
+          </p>
+          <img src="img/ergodox.jpg" width=500/>
+
+
+          <aside class="notes">
+            <ul>
+              <li>Can you think faster than you type? If so, your typing speed is holding you back</li>
+              <li>I thought I was good at typing until I got a new keyboard</li>
+              <li>It forced me to learn to type from scratch, and I used the opportunity to optimise it</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Looping</h3>
+          <p>
+            Getting your new code ready for observing
+          </p>
+	  <table>
+	    <thead>
+	      <tr>
+		<th>Strategy</th>
+		<th>Cost</th>
+		<th>Latency</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+		<td>Ship it &amp; see</td>
+		<td>Build, paperwork, deploy, users</td>
+		<td>3 days</td>
+	      </tr>
+	      <tr>
+		<td>UAT</td>
+		<td>Build, deploy, users</td>
+		<td>1 day</td>
+	      </tr>
+	      <tr>
+		<td>Local env</td>
+		<td>Build, start</td>
+		<td>10 mins</td>
+	      </tr>
+	      <tr>
+		<td>Test</td>
+		<td>Build</td>
+		<td>10s</td>
+	      </tr>
+	      <tr>
+		<td>Interactive</td>
+		<td>Compile</td>
+		<td>1s</td>
+	      </tr>
+	    </tbody>
+	  </table>
+
+          <aside class="notes">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Interactive</h3>
+          <p>
+            Interactive development separates state from code
+          </p>
+          <img src="img/interactive.gif"/>
+
+          <aside class="notes">
+            <ul>
+              <li>Allows hot reloading without losing context</li>
+              <li>Loop takes less than a second</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Result</h3>
+          <p>
+            Fast feedback means we can have greater appetite for exploring edge cases
+          </p>
+          <blockquote style="border-left: 4px solid white;">
+            A QA engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999999 beers.
+            Orders a lizard. Orders -1 beers. Orders 0.1 beers. Orders a uieibaclkjd.
+          </blockquote>
+
+          <aside class="notes">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Conclusion</h3>
+          <p>
+            Our code becomes more robust, improving the product. We are happier developers because we feel more productive.
+          </p>
+          <blockquote style="border-left: 4px solid white;">
+            First real customer walks in and asks where the bathroom is. The bar bursts into flames, killing everyone.
+          </blockquote>
+
+          <aside class="notes">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </aside>
+        </section>
+
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+	hash: true,
+
+	// Learn about plugins: https://revealjs.com/plugins/
+	plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>

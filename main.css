@@ -1,0 +1,11 @@
+.fragment-list-image {
+    transform: translateX(-300px);
+    margin-right: -250px;
+    position: absolute;
+    width: 250px;
+    display: none;
+}
+
+.current-fragment .fragment-list-image {
+    display: block;
+}
