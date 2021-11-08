@@ -14,6 +14,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
+
         <section data-background-image="img/background.jpg">
 	  <h2 class="r-fit-text">Welcome</h2>
           <p>A short overview of optimising your development feedback loop</p>
@@ -143,12 +144,13 @@
                 Auto imports of dependencies
               </li>
             </ul>
-            <aside class="notes">
-              <ul>
-                <li>There will be many, many more</li>
-                <li>Spend some time discovering and playing with these. Having them at your fingertips will multiply your output</li>
-              </ul>
-            </aside>
+          </p>
+          <aside class="notes">
+            <ul>
+              <li>There will be many, many more</li>
+              <li>Spend some time discovering and playing with these. Having them at your fingertips will multiply your output</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
@@ -288,10 +290,12 @@
           <aside class="notes">
           </aside>
         </section>
+
       </div>
     </div>
 
     <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -300,7 +304,7 @@
 	hash: true,
 
 	// Learn about plugins: https://revealjs.com/plugins/
-	plugins: [ ]
+	plugins: [ RevealNotes ]
       });
     </script>
   </body>
